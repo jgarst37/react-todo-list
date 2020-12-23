@@ -1,5 +1,5 @@
 body {
-  background-color: #ccd5ae;
+  background-color: #a8dadc;
   color: #2f1f0e;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -9,40 +9,77 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-#header {
-  background-color: #d4a373;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e63946;
+  color: #ffffff;
   font-family: "Permanent Marker";
   font-size: 1.5rem;
-  padding: 0.5rem;
-  height: 10%;
+  height: 3rem;
   width: 100%;
 }
 
-#footer {
-  background-color: #d4a373;
-  padding: 0.5rem;
-  font-size: 0.75rem;
-  height: 5%;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e63946;
+  color: #ffffff;
+  font-size: 1rem;
+  height: 2.5rem;
+  width: 100%;
+}
+
+#middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
   width: 100%;
 }
 
 #to-do {
-  background-color: #fefae0;
-  padding: 1.5rem;
-  height: 85%;
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1faee;
+  border-radius: 3px;
+  border: #1d3557 solid 1px;
+  box-shadow: 1px 1px 5px #1d3557;
+  width: 40rem;
+  margin: 3rem;
 }
 
-#to-do .form-group {
-  font-size: 0.6rem;
-  margin-bottom: 0.1rem;
+#to-do form {
+  padding: 0 1rem;
 }
 
-#to-do .form-check-input {
-  margin-top: 0.1rem;
+#to-do .task-item {
+  border-bottom: #1d3557 solid 1px;
+  padding: 0.4rem 0;
+  vertical-align: baseline;
+}
+
+#to-do .last-item {
+  border-bottom: none;
+}
+
+#to-do .task-item label {
+  padding: 0.2rem;
+}
+
+#to-do #controls {
+  height: 2.2rem;
+  border-top: #1d3557 solid 2px;
+  background-color: #457b9d;
 }
